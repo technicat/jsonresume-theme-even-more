@@ -20,7 +20,7 @@
       {{#if city}}
         <li>
           {{{icon 'map-pin'}}}
-          {{city}}{{#region}}, {{/region}}{{region}}{{#countryCode}}, {{formatCountry .}}{{/countryCode}}
+          {{city}}{{#region}}, {{.}}{{/region}}{{#countryCode}}, {{formatCountry .}}{{/countryCode}}
         </li>
       {{/if}}
     {{/location}}
