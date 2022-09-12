@@ -19,7 +19,7 @@
     "url": "https://github.com/technicat/jsonresume-theme-even-more"
   },
   "license": "MIT",
-  "author": "Rafael Bardini",
+  "author": "Phi Chu",
   "type": "module",
   "exports": {
     "require": "./dist/index.cjs",
