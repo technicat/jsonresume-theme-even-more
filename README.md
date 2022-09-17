@@ -6,11 +6,6 @@ Additions to the [even](https://github.com/rbardini/jsonresume-theme-even) theme
 - include region (state) in location display
 - display skill levels
 
-# jsonresume-theme-even
-
-A flat [JSON Resume](https://jsonresume.org/) theme, compatible with the latest [resume schema](https://github.com/jsonresume/resume-schema).
-Inspired by [jsonresume-theme-flat](https://github.com/erming/jsonresume-theme-flat).
-
 ## Installation
 
 ```console
