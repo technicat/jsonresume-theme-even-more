@@ -5,6 +5,7 @@ Additions to the [even](https://github.com/rbardini/jsonresume-theme-even) theme
 - fix for first day of the month displaying as the previous month
 - include region (state) in location display
 - display skill levels
+- handle experimental additions to the JSON [schema](https://jsonresume.org/schema/), e.g. images for projects.
 
 ## Installation
 
