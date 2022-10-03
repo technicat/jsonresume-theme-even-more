@@ -21,6 +21,9 @@
               </div>
             </div>
           </header>
+          {{#images}}
+          <img src="{{.}}" alt="project image">
+          {{/images}}
           {{#description}}
             {{{markdown .}}}
           {{/description}}

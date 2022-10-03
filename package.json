@@ -19,7 +19,7 @@
     "url": "https://github.com/technicat/jsonresume-theme-even-more"
   },
   "license": "MIT",
-  "author": "Phi Chu",
+  "author": "Phil Chu",
   "type": "module",
   "exports": {
     "require": "./dist/index.cjs",
