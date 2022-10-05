@@ -1,24 +1,27 @@
 {{#if resume.certificates.length}}
-  <section id="certificates">
-    <h3>Certificates</h3>
-    <div class="stack">
-      {{#each resume.certificates}}
-        <article>
-          <header>
-            <h4>{{> link}}</h4>
-            <div class="meta">
-              {{#issuer}}
-                <div>
-                  Issued by <strong>{{.}}</strong>
-                </div>
-              {{/issuer}}
-              {{#date}}
-                <time datetime="{{.}}">{{formatDate .}}</time>
-              {{/date}}
-            </div>
-          </header>
-        </article>
-      {{/each}}
-    </div>
-  </section>
+<section id="certificates">
+  <h3>Certificates</h3>
+  <div class="stack">
+    {{#each resume.certificates}}
+    <article>
+      <header>
+        <h4>{{> link}}</h4>
+        <div class="meta">
+          {{#issuer}}
+          <div>
+            Issued by <strong>{{.}}</strong>
+          </div>
+          {{/issuer}}
+          {{#date}}
+          <time datetime="{{.}}">{{formatDate .}}</time>
+          {{/date}}
+        </div>
+      </header>
+      {{#images}}
+      <img src="{{.}}" width="400" alt="project image">
+      {{/images}}
+    </article>
+    {{/each}}
+  </div>
+</section>
 {{/if}}

@@ -1,65 +1,65 @@
 <header class="masthead">
   {{#image}}
-    <img src="{{.}}" alt="">
+  <img src="{{.}}" alt="">
   {{/image}}
   <div>
     {{#name}}
-      <h1>{{.}}</h1>
+    <h1>{{.}}</h1>
     {{/name}}
     {{#label}}
-      <h2>{{.}}</h2>
+    <h2>{{.}}</h2>
     {{/label}}
   </div>
   {{#summary}}
-    <article>
-      {{{markdown .}}}
-    </article>
+  <article>
+    {{{markdown .}}}
+  </article>
   {{/summary}}
   <ul class="icon-list">
     {{#location}}
-      {{#if city}}
-        <li>
-          {{{icon 'map-pin'}}}
-          {{city}}{{#region}}, {{.}}{{/region}}{{#countryCode}}, {{formatCountry .}}{{/countryCode}}
-        </li>
-      {{/if}}
+    {{#if city}}
+    <li>
+      {{{icon 'map-pin'}}}
+      {{city}}{{#region}}, {{.}}{{/region}}{{#countryCode}}, {{formatCountry .}}{{/countryCode}}
+    </li>
+    {{/if}}
     {{/location}}
     {{#email}}
-      <li>
-        {{{icon 'mail'}}}
-        <a href="mailto:{{.}}">{{.}}</a>
-      </li>
+    <li>
+      {{{icon 'mail'}}}
+      <a href="mailto:{{.}}">{{.}}</a>
+    </li>
     {{/email}}
     {{#phone}}
-      <li>
-        {{{icon 'phone'}}}
-        <a href="tel:{{formatPhone .}}">{{.}}</a>
-      </li>
+    <li>
+      {{{icon 'phone'}}}
+      <a href="tel:{{formatPhone .}}">{{.}}</a>
+    </li>
     {{/phone}}
     {{#url}}
-      <li>
-        {{{icon 'link'}}}
-        <a href="{{.}}">{{formatURL .}}</a>
-      </li>
+    <li>
+      {{{icon 'link'}}}
+      <a href="{{.}}">{{formatURL .}}</a>
+    </li>
     {{/url}}
     {{#profiles}}
-      <li>
-        {{{icon network 'user'}}}
-        {{#if username}}
-          {{#if url}}
-            <a href="{{url}}">{{username}}</a>
-          {{else}}
-            {{username}}
-          {{/if}}
-        {{else}}
-          {{#url}}
-            <a href="{{.}}">{{formatURL .}}</a>
-          {{/url}}
-        {{/if}}
-        {{#network}}
-          <span class="network">({{.}})</span>
-        {{/network}}
-      </li>
+    <li>
+      {{{icon network 'user'}}}
+      {{#if username}}
+      {{#if url}}
+      <a href="{{url}}">{{username}}</a>
+      {{else}}
+      {{username}}
+      {{/if}}
+      {{else}}
+      {{#url}}
+      <a href="{{.}}">{{formatURL .}}</a>
+      {{/url}}
+      {{/if}}
+      {{#network}}
+      <span class="network">({{.}})</span>
+      {{/network}}
+    </li>
     {{/profiles}}
   </ul>
 </header>
