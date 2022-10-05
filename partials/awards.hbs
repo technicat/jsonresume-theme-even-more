@@ -15,11 +15,11 @@
           {{#date}}
           <time datetime="{{.}}">{{formatDate .}}</time>
           {{/date}}
-          {{#images}}
-          <img src="{{.}}" width="400" alt="project image">
-          {{/images}}
         </div>
       </header>
+      {{#images}}
+      <img src="{{.}}" width="400" alt="project image">
+      {{/images}}
       {{#summary}}
       {{{markdown .}}}
       {{/summary}}
